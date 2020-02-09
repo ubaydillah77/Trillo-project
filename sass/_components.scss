@@ -126,11 +126,22 @@
     justify-content: center;
   }
 
-  &__user-photo {
-    width: 3.75rem;
-    height: 3.75rem;
-    border-radius: 50%;
+  &__box {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
     margin-right: 0.8rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__user-photo {
+    position: absolute;
+    max-width: fit-content;
+    width: 100%;
+    height: auto;
   }
 }
 
