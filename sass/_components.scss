@@ -247,6 +247,10 @@
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
     color: $color-primary-dark;
+
+    @media only screen and(max-width:$bp-smallest) {
+      line-height: 1.1;
+    }
   }
 
   &__stars {
@@ -266,6 +270,7 @@
     font-size: 1.2rem;
     display: flex;
     vertical-align: center;
+    align-items: center;
   }
 
   &__icon--location {
@@ -475,6 +480,10 @@
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      line-height: 1.2;
+    }
   }
 }
 
